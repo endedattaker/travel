@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <form method="post" enctype="multipart/form-data">
+            {{forms}}
+            <button type="submit">save</button>
+            {% csrf_token %}
+            
+        </form>
+    </body>
+</html>
